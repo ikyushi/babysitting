@@ -1,0 +1,30 @@
+html {
+    background-color: aquamarine;
+}
+
+/* This is the part at the top of the page. */
+.header {
+    h2 {
+        line-height: 25%;
+        padding-bottom: 15px;
+    }
+    h1 {
+        line-height: 25%;
+        padding-top: 20px;
+    }
+    background-color: antiquewhite;
+}
+
+.body {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: cornflowerblue; // i love this color!!!
+}
+
+#finalRes {
+    background-color: red;
+}
+
+.footer {
+    background-color: #2f2f2f
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「子守して中」のレートカルキュレータ</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <h1 align="center">「子守して中」レートカルキュレーター</h1>
+        <h2 align="center">Babysitting Rate Calculator</h2>
+    </div>
+    <div class="body">
+        <div class="about">
+            <h3 align="center">これは？ What is this?</h3>
+            <p>This is, as the name implies, a rate calculator for babysitters (based off the avg where I live on 2022/08/03).
+                Inspired by my girlfriend getting absolutely ripped off while babysitting in the past on multiple occassions, I decided to make this.
+                It's running off some very simple JavaScript (like, at most 1 script) with a basic HTML (what you're seeing right now) frontend coded in less than a night by ~me~.
+                Thanks for stopping by!
+            </p>
+        </div>
+
+        <h1 align="center">カルキュレータ | Calculator</h3>
+
+        <label for="hrsInput">How many hours?</label>
+        <input type="number" id="hrsInput">
+
+        <label for="kidsInput">How many kids?</label>
+        <input type="number" id="kidsInput">
+
+        <label for="timesInput">How many times?</label>
+        <input type="number" id="timesInput">
+
+        <label for="discountInput">Select a discount.</label>
+        <select name="discount" id="discountInput">
+            <option value="full">0% discount / full price</option>
+            <option value="three_quarters">25% discount / 75% of full price</option>
+            <option value="half">50% discount / half off full price</option>
+            <option value="quarter">75% discount / 25% of full price</option>
+            <option value="free">100% discount / free (NOT RECOMMENDED)</option>
+        </select>
+
+
+        <button type="submit" onclick="calculate()">Calculate</button>
+
+        <h1>A good estimate for your rate is: <span id="finalRes"></span></h1>
+    </div>
+    <div class="footer">
+        <h4>ikyushi</h4>
+        <a href="https://github.com/ikyushi">GitHub</a> | 
+    </div>
+</body>
+</html>
