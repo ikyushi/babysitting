@@ -7,8 +7,8 @@ let final = 0.0
 
 /* 
 Here's what this needs to do.
-1. take average and multiply it by {hours}
-2. take that number, multiply by {kids}
+1. take average and add $5 for every extra kid (over 1)
+2. take that number, multiply by {hours)
 3. take that number, multiply by {times}
 4. choose discount based on family/friends
     A. 100% total price (0% off, full price) (discount var: 1)
@@ -39,9 +39,11 @@ function calculate() {
     console.log(discountValue)
 
     // calculate
-    final = AVERAGE * hours
+    thingy = kids - 1
+    thingy = thingy * 5
+    final = AVERAGE + thingy
     console.log(final)
-    final = final * kids
+    final = final * hours
     console.log(final)
     final = final * times
     console.log(final)
